@@ -1,0 +1,50 @@
+System Calorie Tracker
+
+1. Mulai
+2. Input tujuan kalori harian (daily_goal)
+3. Inisialisasi daftar makanan (meals) dengan data awal:
+   - Sarapan: 350 kcal pada pukul 08:00:00
+   - Makan Siang: 600 kcal pada pukul 12:30:00
+   - Snack: 150 kcal pada pukul 15:00:00
+4. Simpan waktu saat ini (timestamp)
+
+5. Tampilkan daftar makanan yang sudah ada
+6. Tampilkan pesan: "Mulailah mencatat makanan Anda. Ketik 'done' untuk selesai."
+
+7. Loop (selama pengguna belum mengetik 'done'):
+   a. Input nama makanan (meal_name)
+   b. Jika meal_name adalah 'done', keluar dari loop
+   c. Input jumlah kalori (calories)
+   d. Tambahkan makanan baru ke dalam daftar meals dengan waktu saat ini
+
+8. Hitung total kalori yang telah dikonsumsi:
+   - total_calories = jumlah semua kalori dalam meals
+
+9. Hitung kalori yang tersisa:
+   - remaining_calories = daily_goal - total_calories
+
+10. Tampilkan ringkasan:
+    a. Tampilkan tanggal saat ini
+    b. Tampilkan tujuan kalori harian
+    c. Tampilkan total kalori yang telah dikonsumsi
+    d. Tampilkan kalori yang tersisa
+
+11. Jika total kalori lebih dari daily_goal:
+    - Tampilkan peringatan: "Anda telah melebihi tujuan kalori harian."
+12. Jika total kalori kurang dari daily_goal:
+    - Tampilkan pesan: "Anda masih memiliki kalori yang tersisa untuk dikonsumsi hari ini."
+13. Jika total kalori sama dengan daily_goal:
+    - Tampilkan pesan: "Selamat! Anda telah mencapai tujuan kalori harian dengan sempurna."
+
+14. Analisis kalori:
+    a. Temukan makanan dengan kalori tertinggi
+    b. Temukan makanan dengan kalori terendah
+    c. Tampilkan makanan dengan kalori tertinggi dan terendah
+
+15. Berikan saran:
+    a. Jika remaining_calories <= 0:
+       - Tampilkan pesan: "Anda sudah melebihi batas kalori harian. Pertimbangkan untuk tidak menambah asupan."
+    b. Jika remaining_calories > 0:
+       - Tampilkan pesan: "Anda masih dapat mengkonsumsi sisa kalori untuk hari ini."
+
+16. Selesai
